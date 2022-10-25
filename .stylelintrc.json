@@ -2,5 +2,13 @@
   "extends": "stylelint-config-standard",
   "rules": {
     "indentation": 4
-  }
+  },
+  "ignoreFiles": [
+    ".eslintignore",
+    "webpack.config.js",
+    ".eslintrc.js",
+    "/dist/*",
+    "/node_modules/*",
+    "statoscope.config.js"
+  ]
 }

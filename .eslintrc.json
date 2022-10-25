@@ -10,5 +10,13 @@
         "no-shadow": 0,
         "react/button-has-type": 0,
         "react/prop-types": 0
-    }
+    },
+    "ignore": [
+        ".eslintignore",
+        "webpack.config.js",
+        ".eslintrc.js",
+        "/dist/*",
+        "/node_modules/*",
+        "statoscope.config.js"
+    ]
 }

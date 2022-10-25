@@ -17,10 +17,9 @@
         "rxjs": "^7.1.0"
     },
     "scripts": {
-        "start": "webpack serve --open",
-        "build": "webpack",
-        "test": "echo \"implement me\"",
-        "lint:js": "npx eslint \"./src/*.js\" --fix",
+        "start": "webpack serve --open --mode=development",
+        "build": "webpack --mode=production",
+        "lint:js": "npx eslint \"**/*.js?\" --fix",
         "lint:css": "npx stylelint \"**/*.css\" --fix",
         "analyze": "echo \"implement me\"",
         "validate": "node_modules/.bin/statoscope validate -i stats.json --config=./statoscope.config.js"

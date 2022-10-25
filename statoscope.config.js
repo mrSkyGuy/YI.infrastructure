@@ -8,4 +8,4 @@ module.exports = {
             '@statoscope/webpack/no-packages-dups': ['error'],
         }
     }
-}
+};

@@ -9,10 +9,11 @@ import { initStore } from './store';
 const store = initStore();
 
 ReactDOM.render(
-    <BrowserRouter>
-        <Provider store={store} >
-            <Application />
-        </Provider>
-    </BrowserRouter>, 
+  <BrowserRouter>
+    <Provider store={store}>
+      <Application />
+    </Provider>
+  </BrowserRouter>,
+    // eslint-disable-next-line no-undef
     document.getElementById('root')
 );

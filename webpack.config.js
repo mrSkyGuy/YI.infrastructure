@@ -25,6 +25,13 @@ const config = {
             // @TODO css rule
         ],
     },
+    devServer: {
+        static: {
+            directory: path.join(__dirname, 'public')
+        },
+        compress: true,
+        port: 3000
+    }
     // @TODO optimizations
     // @TODO lodash treeshaking
     // @TODO chunk for lodash

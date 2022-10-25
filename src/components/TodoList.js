@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addItem, setText } from '../store';
 import { TodoItem } from './TodoItem';
 
-export const TodoList = () => {
+export function TodoList() {
     const dispatch = useDispatch();
 
     const items = useSelector((state) => state.items);
@@ -19,15 +19,14 @@ export const TodoList = () => {
     }, [dispatch, text]);
 
     return (
+      <div>
         <div>
-            <div>
-                <input data-testid="input-add" value={text} onChange={onChange} />
-                <button data-testid="button-add" onClick={onClick}>Добавить</button>
-            </div>
-            <div data-testid="list" className="list">
-                {lodash.map(items, (text, i) => <TodoItem key={i} index={i} />)}
-            </div>
+          <input data-testid="input-add" value={text} onChange={onChange} />
+          <button data-testid="button-add" onClick={onClick}>Добавить</button>
         </div>
+        <div data-testid="list" className="list">
+          {lodash.map(items, (text, i) => <TodoItem key={i} index={i} />)}
+        </div>
+      </div>
     );
 }
-

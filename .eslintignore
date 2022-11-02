@@ -1,0 +1,6 @@
+.eslintignore
+webpack.config.js
+.eslintrc.js
+/dist/*
+/node_modules/*
+statoscope.config.js

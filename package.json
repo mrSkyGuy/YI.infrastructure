@@ -20,7 +20,7 @@
     "scripts": {
         "start": "webpack serve --open --mode=development",
         "build": "webpack --mode=production",
-        "lint:js": "npx eslint \"**/*.js?\" --fix",
+        "lint:js": "npx eslint --ext .js,.jsx --fix",
         "lint:css": "npx stylelint \"**/*.css\" --fix",
         "analyze": "statoscope serve stats.json -o",
         "validate": "node_modules/.bin/statoscope validate -i stats.json --config=./statoscope.config.js",
